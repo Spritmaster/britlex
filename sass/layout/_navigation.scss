@@ -1,0 +1,54 @@
+.sitenav__list{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap:5rem;
+    color: $black-text-color;
+
+    @include responsive  (tablet){
+        display: none;
+    }
+}
+
+.header__btn{
+    border: 2px solid $btns-color;
+    border-radius: 0.5rem;
+    padding: 1.7rem 5.7rem;
+    background-color: transparent;
+    color: $black-text-color;
+
+    @include responsive (m-desktop){
+        display: none;
+    }
+}
+.header__btn:hover{
+    border-color: $header-btn;
+    background-color:$header-btn;
+}
+.header__btn:active{
+   opacity: 0.6;
+}
+
+.burger-btn{
+    display: none;
+    background-color: transparent;
+
+    img{
+        width: 3rem;
+        height: 1.7rem;
+
+        @include responsive (tablet){
+            width: 4.3rem;
+            height: 2.4rem;
+        }
+    }
+
+    @include responsive (tablet){
+        display: block;
+    }
+
+    @include responsive (phone){
+        width: 4.2rem;
+        height: 2.4rem;
+    }
+}

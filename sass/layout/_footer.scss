@@ -1,0 +1,64 @@
+.footer .container{
+    margin-top: 13rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+
+    hr{
+        position: absolute;
+        max-width: 1338px;
+        width: 96%;
+        height: 3px;
+        background-color: $btns-color;
+        top: -1rem;
+
+        @include responsive (tablet){
+            width: 90%;
+        }
+    }
+
+    &-link{
+        display: flex;
+        align-items: center;
+
+        
+    }
+}
+
+.f-link{
+    font-size: 2.4rem;
+
+    @include responsive (m-desktop){
+        font-size: 1.6rem;
+    }
+
+    @include responsive (phone){
+        font-size: 1.2rem;
+    }
+}
+
+.footer{
+    font-size: 2.4rem;
+
+    @include responsive (phone){
+        font-size: 1.2rem;
+    }
+
+    @include responsive (m-desktop){
+        font-size: 1.6rem;
+    }
+
+    .site__logo{
+       @include responsive (tablet){
+        font-size: 3rem;
+       }
+
+       @include responsive (phone){
+        font-size: 2.5rem;
+       }
+    }
+
+    
+}

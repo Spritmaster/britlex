@@ -1,0 +1,28 @@
+.header {
+
+    padding: 5.5rem 0;
+
+    @include responsive (m-desktop){
+        padding: 3rem 0;
+    }
+
+    .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    }
+    
+   
+}
+
+.site__logo{
+    color: $black-text-color;
+    span{
+     color: $header-span-color;   
+    }
+
+    
+}
+
+

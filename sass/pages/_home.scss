@@ -1,0 +1,532 @@
+.language{
+margin-bottom: 14rem;
+    &__text-wrapper{
+        max-width: 580px;
+        position: relative;
+
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        @include responsive (phone){
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+
+        .learn{
+            @include responsive (m-desktop){
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    &__title{
+        max-width: 390px;
+        font-weight: 600;
+        font-size: 6.4rem;
+        line-height: 1.2;
+        color: $black-text-color;
+        margin-bottom: 4rem;
+
+        @include responsive (m-desktop){
+            font-size: 4.8rem;
+            margin-bottom: 2.6rem;
+        }
+        @include responsive (tablet){
+            font-size: 3.6rem;
+        }
+
+        @include responsive (phone){
+            max-width: 491px;
+            font-size: 3.4rem;
+        }
+    }
+    &__text{
+        max-width: 550px;
+        font-size: 2.4rem;
+        line-height: 1.2;
+        margin-bottom: 6.1rem;
+        @include responsive (m-desktop){
+            font-size: 2.4rem;
+            margin-bottom: 3.3rem;
+        }
+
+        @include responsive (tablet){
+            font-size: 1.5rem;
+        }
+
+        @include responsive (phone){
+            margin-bottom: 3.7rem;
+        }
+    }
+
+    &__btn{
+        border: 2px solid $btns-color;
+        font-size: 3.6rem;
+        color: $white-color;
+        padding: 3rem  11.6rem;
+        background-color: $btns-color;
+        border-radius: 15px;  
+
+        @include responsive (m-desktop){
+            padding: 2rem  7.6rem;
+            font-size: 2.4rem;
+        }
+
+        @include responsive (tablet){
+            padding: 1.7rem  6.5rem;
+            font-size: 1.8rem;
+        }
+        @include responsive (phone){
+            padding: 2.2rem  9.9rem;
+        }
+    }
+    &__btn:hover{
+        background-color: transparent;
+        color: $black-text-color;
+    }
+    &__btn:active{
+       opacity: 0.6;
+    }
+
+
+
+}
+.lampa{
+    position: absolute; 
+    top: 10rem;
+    left: 35rem;
+
+    @include responsive (m-desktop){
+        top: 8rem;
+        left: 28rem;
+    }
+    @include responsive (tablet){
+        top: 6rem;
+        left: 19rem;
+    }
+    @include responsive (phone){
+        display: none;
+    }
+
+
+   
+}
+.about{
+    width: 100%;
+    height: auto;
+
+    h2{
+        @include responsive (m-desktop){
+            font-size: 3.6rem;
+        }
+        @include responsive (tablet){
+            font-size: 3rem;
+        }
+
+        @include responsive (phone){
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+}
+.about-us{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+
+    @include responsive (phone){
+        flex-direction: column-reverse;
+
+        text-align: center;
+    }
+    
+
+    .numbers{
+        display: flex;
+        max-width: 635px;
+        justify-content: space-between;
+        gap: 3rem;
+
+        @include responsive (phone){
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
+        @include responsive (mobile){
+            flex-direction: column;
+        }
+    }
+
+    .pupils{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            margin-bottom: 0.5rem;
+
+            @include responsive (m-desktop){
+                font-size: 3rem;
+            }
+
+            @include responsive (tablet){
+                font-size: 2.2rem;
+            }
+        }
+
+        p{
+            @include responsive (tablet){
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    img{
+        @include responsive (big-desktop){
+        width: 80%;
+        height: auto;
+        }
+        @include responsive (m-desktop){
+            width: 50%;
+            height: auto;
+            }
+            @include responsive (phone){
+                width: 90%;
+                height: auto;
+                }
+    }
+
+   
+    .info-text{
+        max-width: 635px;
+
+        @include responsive (tablet){
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
+.price{
+    margin-top: 17rem;
+
+    h2{
+       text-align: center;
+       margin-bottom: 4rem;
+    }
+
+    .price-box-wrapper{
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+
+        @include responsive (phone){
+            flex-direction: column;
+        }
+
+        
+    }
+    .box-one{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include responsive (phone){
+            align-items: center;
+            text-align: center;
+        }
+
+        img{
+            width: 311px;
+            height: 311px;
+
+            margin-bottom: 4rem;
+            @include responsive (m-desktop){
+                width: 90%;
+            }
+            @include responsive (phone){
+                margin-bottom: 3rem;
+            }
+        }
+        }
+
+        h3{
+            max-width: 372px;
+            line-height: 1.5;
+            margin-bottom: 2rem;
+            @include responsive (m-desktop){
+                font-size: 3rem;
+                line-height: 1;
+            }
+
+            @include responsive (tablet){
+                font-size: 2.2rem;
+            }
+            @include responsive (tablet){
+                font-size: 2.2rem;
+            }
+        }
+        }
+
+        P{
+            font-size: 2rem;
+          @include responsive  (m-desktop){
+            font-size: 1.6rem;
+          }
+
+          @include responsive  (m-desktop){
+            font-size: 1.3rem;
+          }
+        }
+    
+
+    .box-two{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include responsive (phone){
+            align-items: center;
+            text-align: center;
+        }
+        p{
+            margin-bottom: 6.5rem;
+        }
+
+        img{
+            width: 391px;
+            height: 283px;
+
+            margin-bottom: 6rem;
+            
+            @include responsive (m-desktop){
+                width: 90%;
+            }
+            @include responsive (phone){
+                margin-bottom: 3rem;
+            }
+        }
+        
+
+        h3{
+            max-width: 372px;
+            line-height: 1.5;
+            margin-bottom: 2rem;
+            @include responsive (m-desktop){
+                font-size: 3rem;
+                line-height: 1;
+            }
+
+            @include responsive (tablet){
+                font-size: 2.2rem;
+            }
+        }
+
+        P{
+          font-size:2rem;  
+          @include responsive  (m-desktop){
+            font-size: 1.6rem;
+          }
+
+          @include responsive  (m-desktop){
+            font-size: 1.3rem;
+          }
+
+          @include responsive (phone){
+            margin-bottom: 4rem;
+        }
+        }
+    }
+    
+    .box-three{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include responsive (phone){
+            align-items: center;
+            text-align: center;
+        }
+        p{
+            margin-bottom: 6.9rem;
+
+            @include responsive (phone){
+                margin-bottom: 4rem;
+            }
+        }
+        
+
+        img{
+            width: 340px;
+            height: 340px;
+
+            
+            @include responsive (m-desktop){
+                width: 90%;
+            }
+        }
+
+        h3{
+            max-width: 372px;
+            line-height: 1.5;
+            margin-bottom: 2rem;
+            @include responsive (m-desktop){
+                font-size: 3rem;
+                line-height: 1;
+            }
+
+            @include responsive (tablet){
+                font-size: 2.2rem;
+            }
+        }
+
+        P{
+          font-size:2rem;  
+          @include responsive  (m-desktop){
+            font-size: 1.6rem;
+          }
+
+          @include responsive  (m-desktop){
+            font-size: 1.3rem;
+          }
+        }
+        
+    }
+
+
+
+    .yevro{
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        max-width: 205px;
+        font-size: 3rem;
+        background:$yevro-color;
+        border-radius: 5px;
+        color: $btns-color;
+        padding: 0 2rem;
+
+        @include responsive (m-desktop){
+            font-size: 2.2rem;
+            padding: 0 1.5rem;
+        }
+    }
+    .yevro-span{
+        font-size: 1.4rem;
+    }
+
+
+    // contacts
+
+    .contacts{
+        margin-top: 21rem;
+        display: flex;
+        gap: 6rem;
+        align-items: center;
+        justify-content: space-between;
+
+        @include responsive (tablet){
+            text-align: center;
+            flex-direction: column;
+
+        }
+
+        img{
+            @include responsive (m-desktop){
+                width: 50%;
+            }
+            @include responsive (phone){
+                width: 90%;
+            }
+        }
+
+        .contacts__tet-wrapper{
+            h2{
+                margin-bottom: 3.5rem;
+
+                @include responsive (big-tablet){
+                    margin-bottom: 2rem;
+                }
+            }
+
+            p{
+                max-width: 770px;
+                margin-bottom: 5rem;
+
+                @include responsive (big-tablet){
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+
+        .input-btn-wrapper{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+
+            @include responsive (m-desktop){
+                flex-direction: column;
+                align-items: start;
+            }
+            @include responsive (tablet){
+                margin: 0 auto;
+                align-items: center;
+    
+            }
+            .email{
+                max-width: 500px;
+                border: 1px solid $primary-text-color;
+                border-radius: 10px;
+                padding: 2.6rem 12rem 3rem 3.8rem;
+
+                @include responsive (big-tablet){
+                    padding: 2.3rem 9rem 2.8rem 3.8rem;
+                }
+
+                @include responsive (tablet){
+                    padding: 2rem  10rem 2rem 2rem;
+        
+                }
+               
+            }
+
+            .sub{
+                display: inline-block;
+                border: 2px solid $btns-color;
+                background-color: $black-text-color;
+                border-radius: 10px;
+                padding: 2.4rem 8rem;
+                color: $white-color;
+               
+
+                @include responsive (tablet){
+                    display: inline-block;
+                    align-items: center;
+                    text-align: center;
+                    width: 291px;
+                    padding:2rem 0;
+                    
+                }
+
+            }
+
+            .sub:hover{
+                background-color: transparent;
+                color: $black-text-color;
+            }
+            .sub:active{
+               opacity: 0.6;
+            }
+          
+            }
+        }
+    
