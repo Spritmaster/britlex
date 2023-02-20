@@ -85,6 +85,11 @@ margin-bottom: 14rem;
         @include responsive (phone){
             padding: 2.2rem  9.9rem;
         }
+
+        @include responsive (mobile){
+            padding: 1rem 3rem;
+        }
+
     }
     &__btn:hover{
         background-color: transparent;
@@ -496,6 +501,11 @@ margin-bottom: 14rem;
                     padding: 2rem  10rem 2rem 2rem;
         
                 }
+
+                @include responsive (min-mobile){
+                    padding: 1rem  7rem 1rem 2rem;
+        
+                }
                
             }
 
@@ -517,6 +527,11 @@ margin-bottom: 14rem;
                     
                 }
 
+                @include responsive (min-mobile){
+                    width: 262px;
+                    padding: 0.5rem 0;
+        
+                }
             }
 
             .sub:hover{

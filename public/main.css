@@ -583,6 +583,12 @@ p {
   align-items: center;
   gap: 4rem;
 }
+@media only screen and (max-width: 480px) {
+  .footer .container {
+    gap: 2rem;
+    flex-direction: column;
+  }
+}
 .footer .container hr {
   position: absolute;
   max-width: 1338px;
@@ -733,6 +739,11 @@ p {
 @media only screen and (max-width: 655px) {
   .language__btn {
     padding: 2.2rem 9.9rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .language__btn {
+    padding: 1rem 3rem;
   }
 }
 .language__btn:hover {
@@ -1162,6 +1173,11 @@ P {
     padding: 2rem 10rem 2rem 2rem;
   }
 }
+@media only screen and (max-width: 370px) {
+  .contacts .input-btn-wrapper .email {
+    padding: 1rem 7rem 1rem 2rem;
+  }
+}
 .contacts .input-btn-wrapper .sub {
   display: inline-block;
   border: 2px solid #263238;
@@ -1177,6 +1193,12 @@ P {
     text-align: center;
     width: 291px;
     padding: 2rem 0;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .contacts .input-btn-wrapper .sub {
+    width: 262px;
+    padding: 0.5rem 0;
   }
 }
 .contacts .input-btn-wrapper .sub:hover {

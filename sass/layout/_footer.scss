@@ -6,6 +6,11 @@
     align-items: center;
     gap: 4rem;
 
+    @include responsive (mobile){
+        gap: 2rem;
+        flex-direction: column;
+    }
+
     hr{
         position: absolute;
         max-width: 1338px;
